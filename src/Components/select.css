@@ -1,0 +1,69 @@
+.select {
+  flex: 1;
+  font-size: 14px;
+  background-color: #f5f7fa;
+  border-radius: 5px;
+  color: #434a54;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e6e9ed;
+  cursor: pointer;
+  margin: 0 0.2rem;
+}
+.select-top {
+  display: flex;
+  flex-direction: row;
+  padding: 1.2rem 1.5rem;
+}
+.select-text {
+  flex: 1;
+}
+.select-icon svg {
+  width: 14px;
+  fill: #434a54;
+}
+.select-options {
+  position: relative;
+  background-color: green;
+}
+.options {
+  max-height: 200px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  z-index: 9;
+  margin-top: 2px;
+}
+.options::-webkit-scrollbar {
+  width: 3px;
+}
+.options::-webkit-scrollbar-track {
+  background: #f5f7fa;
+}
+.options::-webkit-scrollbar-thumb {
+  background: #434a54;
+}
+.options::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.option {
+  padding: 1rem 1.5rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+}
+.option div svg {
+  width: 25px;
+}
+.option-label {
+  padding: 0 4px;
+}
+.option:hover {
+  background-color: #f5f7fa;
+}
+.text {
+  color: #434a54;
+}
