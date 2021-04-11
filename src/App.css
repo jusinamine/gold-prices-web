@@ -1,13 +1,17 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+body {
+  font-family: "Droid Arabic Kufi", serif;
+}
 .App-header {
   min-height: 100vh;
   display: flex;
   font-size: calc(10px + 2vmin);
   color: white;
-  flex-direction: row;
+  flex-direction: column;
 }
 .left-side {
   flex: 1 1;
-  padding: 0 1vw;
+  padding: 0 10vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,6 +23,7 @@
   justify-content: center;
   flex-direction: column;
   flex: 1;
+  padding: 0 10vw;
 }
 .selector {
   border: none !important;
@@ -43,6 +48,7 @@
   margin: 0 0.2rem;
   color: #fff;
   border-radius: 5px;
+  font-family: "Droid Arabic Kufi", serif;
 }
 .b-disabled {
   background-color: #a0d468;
@@ -61,6 +67,9 @@
   color: #434a54;
   font-size: 20px;
   text-transform: capitalize;
+}
+.text {
+  font-size: 24px;
 }
 @media only screen and (max-width: 700px) {
   .App-header {
