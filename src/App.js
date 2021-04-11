@@ -43,6 +43,7 @@ import {
   FlagJo,
 } from "./Components/icons";
 import { useState } from "react";
+import { Loader } from "./Components/Loader";
 
 function App() {
   const optionsGoldTypes = [
@@ -106,8 +107,9 @@ function App() {
   const [selectedCurrency, setSelectedCurrency] = useState(null);
   const [selectedGold, setSelectedGold] = useState(null);
   const [goldResult, setGoldResult] = useState("0");
-
+  const [loading, setLoading] = useState(false);
   const getGoldPrice = (currency) => {
+    setLoading(true);
     var requestOptions = {
       method: "GET",
       redirect: "follow",
@@ -126,6 +128,7 @@ function App() {
             goldToUnit.toFixed(2).toString() + selectedCurrency.value
           );
         }
+        setLoading(false);
       })
       .catch((error) => console.log("error", error));
   };
@@ -158,14 +161,16 @@ function App() {
           <div className="button-p-box padding-v-1">
             <button
               className={
-                selectedCurrency != null && selectedGold != null
+                selectedCurrency != null && selectedGold != null && !loading
                   ? "button-p b-normal"
                   : "button-p b-disabled"
               }
-              disabled={selectedCurrency == null && selectedGold == null}
+              disabled={
+                (selectedCurrency == null && selectedGold == null) || loading
+              }
               onClick={() => getGoldPrice(selectedCurrency.value)}
             >
-              الحصول على السعر
+              {loading ? <Loader /> : "الحصول على السعر"}
             </button>
           </div>
         </div>
