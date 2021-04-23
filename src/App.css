@@ -51,14 +51,14 @@ body {
   font-family: "Droid Arabic Kufi", serif;
 }
 .b-disabled {
-  background-color: #a0d468;
+  background-color: #ceab4b;
   opacity: 0.5;
 }
 .b-normal {
-  background-color: #a0d468;
+  background-color: #ceab4b;
 }
 .b-normal:hover {
-  background-color: #8cc152;
+  background-color: #c5a13c;
 }
 .padding-v-1 {
   padding: 1rem 0;
@@ -74,5 +74,11 @@ body {
 @media only screen and (max-width: 700px) {
   .App-header {
     flex-direction: column;
+  }
+  .multi {
+    flex-direction: column;
+  }
+  .multi .select {
+    margin: 0.5rem 0;
   }
 }

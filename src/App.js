@@ -44,6 +44,7 @@ import {
 } from "./Components/icons";
 import { useState } from "react";
 import { Loader } from "./Components/Loader";
+import Navbar from "./Components/Navbar";
 
 function App() {
   const optionsGoldTypes = [
@@ -135,6 +136,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <Navbar />
         <div className="left-side">
           <div className="title">قم باختيار العملة و نوع الذهب</div>
           <div className="multi padding-v-1">

@@ -1,0 +1,29 @@
+.navbar {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  -webkit-box-shadow: -5px 1px 10px -1px rgba(0, 0, 0, 0.1);
+  box-shadow: -5px 1px 10px -1px rgba(0, 0, 0, 0.1);
+  direction: ltr;
+  padding: 0 2vw;
+}
+.navbar div > img {
+  height: 100%;
+  width: 80px;
+}
+.nav-list-icons,
+.nav-list-icons a {
+  display: flex;
+  align-items: center;
+}
+.nav-list-icons a {
+  padding: 0 0.3rem;
+}
+.nav-list-icons svg {
+  width: 20px;
+  fill: #ceab4b;
+  cursor: pointer;
+}
+.nav-list-icons svg:hover {
+  opacity: 0.8;
+}
