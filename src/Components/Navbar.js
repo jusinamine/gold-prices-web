@@ -38,11 +38,27 @@ const Navbar = () => {
         <img src="./gp.png" alt="GOLD PRICES" />
       </div>
       <div className="nav-list-icons">
-        <a href="https://www.facebook.com/profile.php?id=100009901745277">
+        <a
+          href="https://www.facebook.com/profile.php?id=100009901745277"
+          target="_blank"
+          rel="noreferrer"
+        >
           {FacebookIcon}
         </a>
-        <a href="https://www.instagram.com/amine.benk27/">{InstagramIcon}</a>
-        <a href="https://github.com/jusinamine">{GithubIcon}</a>
+        <a
+          href="https://www.instagram.com/amine.benk27/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {InstagramIcon}
+        </a>
+        <a
+          href="https://github.com/jusinamine"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {GithubIcon}
+        </a>
       </div>
     </div>
   );
